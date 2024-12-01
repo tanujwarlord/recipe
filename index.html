@@ -1,214 +1,256 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-769715391"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
 
-  gtag('config', 'AW-769715391');
-</script>
-  <meta charset="UTF-8">
-  <meta name="description" content="Login to Your Accounts Safer">
-  <meta name="keywords" content="login, account login, sign in, account sign in">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index_ll_v27%EF%B9%96version=1.css">
-  <link rel="stylesheet" href="css/style%EF%B9%96version=1.css">
-  <link rel="stylesheet" href="css/media%EF%B9%96version=1.css">
-  <title>Login Safely</title>
-  <script>
-    window.hasGCLID = ""
-  </script>
+    <title>Email Help Desk</title>
 </head>
 
-<body>
-  <img src='assets/image/logo_img.png' class='logo' style='width: 270px;'>
-  <div class="main_box">
-    <div class="d-flex justify-content-center align-items-center">
-      <img src="assets/image/2.png" class="me-2" alt="">
-      <h1 class="text-center">Login & Check Your Email Faster</h1>
-    </div>
-    <p class="text-center">Please install the free Login Safely extension for
-      Firefox™ <br />
-      to login to your accounts faster & get sponsored web search update on your new tab.
-    </p>
-    <ul class="dots">
-      <li>One Click Email Sign-In</li>
-      <li>Check Login URL's against Safe List</li>
-      <li>Download safely from the Firefox Web Store.</li>
-    </ul>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
 
-    <div class="row">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-4">
-            <div class="step">
-              <div class="step-number">1</div>
-              <div class="step-text">Step 1: Click <strong>'Continue'</strong></div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="step">
-              <div class="step-number">2</div>
-              <div class="step-text">Step 2: Click <span id="get"><strong>'
-                    Add Extension'
-                  </strong></span></div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="step">
-              <div class="step-number">3</div>
-              <div class="step-text"><strong>Enjoy!</strong></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-12 text-center">
-        <div id="continueBtn">
-          <button onclick="extInstallClick()" id="continue" class="btn btn-primary">Continue</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="tb-popup-template" style="display:none;">
-    <div class="tb-popup-overlay">
-      <div class="tb-popup">
-                  <h2>Next Step: Click '<span class="color-txt">Continue to Installation</span>'</h2>
-              </div>
-    </div>
-  </div>
-  <div style="text-decoration: none;" class="footer">
-    <div class="footer-container">
-      <div class="le-nav" style="margin-bottom: 10px;">
-        <p class="le-nav-sub">© 2020. loginonline.co All Rights Reserved..</p>
-        <ul class="le-nav-ul le-nav-left">
-        </ul>
-        <ul class="le-nav-ul le-nav-right">
-          <li><a href="../app/privacy.html" target="_blank"><u>Privacy Policy</u></a></li>
-          <li>|</li>
-          <li><a href="../app/eula.html" target="_blank"><u>EULA</u></a></li>
-          <li>|</li>
-          <li><a href="../app/eula.html" target="_blank"><u>EDMCA Policy</u></a></li>
-          <li>|</li>
-          <li><a href="../app/uninstall.html" target="_blank"><u>Uninstall</u></a></li>
-          <li>|</li>
-          <li><a href="../app/contact.html" target="_blank"><u>Contact Us</u></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <main class="main-wrapper">
-    <div id="staticPopup">
-      <div class="ff_arrow_popup">
-        <div class="ff_arrow_main_container">
-          <div class="popup_text_container">
-            <div class="popup_icon">
-              <img src="assets/image/2.png" width="50" alt="">
-            </div>
-            <div class="popup_text">
-              <p class="popup_text_one">Click <span class="popup_txt_edit">"Add"</span> to
-                continue.</p>
-              <p class="popup_text_two">If you cancel, you will miss out on Login Safely.</p>
-            </div>
-          </div>
-          <div class="popup_btn">
-            <div class="popup_cancel_btn">
-              <a class="close-ff-arrow">Cancel</a>
-            </div>
-            <div class="popup_restart_btn">
-              <a>Add</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="firstPopup" class="ff_first_v19 hide-2s">
-      <div class="overlay-arrow-main-content">
-        <div class="overlay-arrow-main-content-wrap">
-          <div class="overlay-arrow-v108">
-            <img src="assets/image/arrow.png" alt="arrow">
-          </div>
-          <div class="ff-arrow-content">
-            <div class="arrow-text">
-              <div class="ff-arrow-text ff-text-change">
-                <span class="stp-sctn">Click </span>
-                <span class="span-text-color">"Continue to Installation"</span>
-                <span class="stp-sctn"> to Login Safely</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="secondPopup">
-      <div class="overlay-arrow-main-content-v2 ff_first_v19">
-        <div class="overlay-arrow-main-content-wrap-v2">
-          <div class="overlay-arrow-v2-v108">
-            <img src="assets/image/arrow.png" alt="arrow">
-          </div>
-          <div class="ff-arrow-content-v2">
-            <div class="arrow-text-v2">
-              <div class="ff-arrow-text-v2 ff-arrow-text-stepsnd-v2 ff-text-change-v2 active">
-                <span class="stp-sctn-v2">Click</span>
-                <span class="span-text-color-v2">"Add"</span>
-                <span class="stp-sctn-v2">to login safely</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="yesPopup">
-      <div class="ff-arrow2 ffarrowroute2 firefox_sqrw2 ff_second_v12">
-        <div class="overlay-arrow2-main-content">
-          <div class="overlay-arrow2">
-            <img src="assets/image/arrow.png" alt="arrow">
-          </div>
-          <div class="ff-arrow2-content">
-            <div class="ff-arrow2-content-wrapper">
-              <span class="arrow-text2 arrow-inline">Click </span>
-              <span class="arrow-bg">"Yes"</span>
-              <span class="arrow-text2 arrow-inline">to continue </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
 
-  <div id="setPixelImage"></div>
-  <div id="install-overlay"></div>
-  <div class="confirm">
-    <p>It looks like the install was interrupted. Try again?</p>
-    <div class="actions">
-      <a href="#" class="btn btn-default js-confirm-yes" onclick="confirm_no()">No</a>
-      <a href="#" class="btn btn-default js-confirm-no blue" onclick="continue_click()">Yes</a>
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto">
+                    <p> <i class='bx bxs-envelope'></i> Chat With Expert For More Help</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="js/axios.min.js"></script>
-<script src="js/config.js"></script>
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/send-mail.png" style="width:50px">Email<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<!-- Default Statcounter code for Firefox Login Safely
-SEARCH http://loginonline.co -->
-<script type="text/javascript">
-var sc_project=12982266; 
-var sc_invisible=1; 
-var sc_security="749ff100"; 
-var sc_remove_link=1; 
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+			<div class="intro"><h1>Having Trouble With Your E-Mail?</h1><br><h1>Get in touch with your email customer care</h1>
+			<p class="mx-auto">Connect with us today to experience reliable email customer service! Click the number above to call us and have your email questions answered, issues resolved, and explore how we can fulfill your needs. We’re just a call away, ready to assist you every step of the way!</p>
+			</div>
+                <div class="col-lg-5 py-5">
+                    <div class="row">
+
+                        <div class="col-12">
+						
+                            <div class="info-box">
+                                <img src="img/icon6.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Lost & Recover Email Password</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/icon4.png" alt="">
+                                <div class="ms-4">
+                                    <h5>E-mail Not Recieve/Send</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-4">
+                            <div class="info-box">
+                                <img src="img/icon5.png" alt="">
+                                <div class="ms-4">
+                                    <h5>Unable To File Attachment</h5>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <img src="img/about.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Stay Tuned</h6>
+                        <h1>Contact us today and let's start a conversation!</h1>
+                        
+                    </div>
+					<p>Connect with us today and experience exceptional email service! Contact us now to get your email questions answered, issues resolved, and discover how we can help meet your email customer needs.We’re here to assist you every step of the way.If you have any questions or feedback, we’d love to hear from you.We’re committed to providing accurate, reliable, and actionable insights that help you succeed in today’s dynamic marketplace.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6">
+                    <div class="service">
+                        <img src="img/icon1.png" alt="">
+                        <h5>Chat With Us</h5>
+                        <p>Have a question or need assistance? Our team is just a click away! Start a chat with us now and let us help you with whatever you need</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="service">
+                        <img src="img/icon2.png" alt="">
+                        <h5>Email</h5>
+                        <p><a href="mailto:help@email.com">help@email.com</a></p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="footer-top text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h4 class="navbar-brand">Email<span class="dot">.</span></h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                            classical Latin literature from</p>
+                        <div class="col-auto social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="col-auto conditions-section">
+                            <a href="#">privacy</a>
+                            <a href="#">terms</a>
+                            <a href="#">disclaimer</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">&copy; Emailhelping 2023. All rights Reserved</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-sm-12 bg-cover"
+                                style="background-image: url(https://www.emailhelping.com/img/c2.jpg); min-height:300px;">
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <form class="p-lg-5 col-12 row g-3">
+                                    <div>
+                                        <h1>Get in touch</h1>
+                                        <p>Fell free to contact us and we will get back to you as soon as possible</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" placeholder="Jon" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="userName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" placeholder="Doe" id="userName"
+                                            aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="userName" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Johndoe@example.com"
+                                            id="userName" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="exampleInputEmail1" class="form-label">Enter Message</label>
+                                        <textarea name="" placeholder="This is looking great and nice."
+                                            class="form-control" id="" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-brand">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.tidio.co/1lkhz2bonjxyqtfnyec2jnh0edeyrwtc.js" async></script>
+<!-- Swap your javascript code above -->
+<script>
+  (function() {
+    function isMobile() {
+      try {
+        return !!(
+          navigator.userAgent &&
+          /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          )
+        );
+      } catch (e) {
+        return false;
+      }
+    }
+
+    function onTidioChatApiReady() {
+      (function() {
+        if (!isMobile()) {
+          window.tidioChatApi.open();
+        }
+      })();
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady);
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+    }
+  })();
 </script>
-<script type="text/javascript"
-src="https://www.statcounter.com/counter/counter.js"
-async></script>
-<!-- End of Statcounter Code -->
+	
+</body>
 
 </html>
